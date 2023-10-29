@@ -1,0 +1,11 @@
+<form method="post">
+  {% csrf_token %} Description:
+  <input type="text" name="description" value="{{ order.description }}" /><br />
+  Priority:
+  <select name="priority">
+    <option value="High">High</option>
+    <option value="Medium">Medium</option>
+    <option value="Low">Low</option></select
+  ><br />
+  <input type="submit" value="Save" />
+</form>

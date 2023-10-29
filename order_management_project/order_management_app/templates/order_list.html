@@ -1,0 +1,5 @@
+{% for order in orders %} {{ order.description }} - Priority: {{ order.priority
+}} <br />
+<a href="{% url 'order_update' order.id %}">Edit</a>
+<a href="{% url 'order_delete' order.id %}">Delete</a>
+{% endfor %}
